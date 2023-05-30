@@ -13,3 +13,6 @@ build:
 	
 run:
 	docker run -p 8000:8000 --network=host zero2prod
+
+tidy:
+	cargo +nightly udeps
